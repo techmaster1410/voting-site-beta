@@ -1,0 +1,42 @@
+
+<h3>Below Quizes are Available Now:</h3><br>
+
+<!-- <ul class="list-group">
+    <li class="list-group-item" *ngFor="let quiz of quizes"> <p>{{quiz.name}} | {{quiz.id}}<button class="btn btn-primary" routerLink="/question" >Go to Quiz</button>
+  </ul>
+
+  <hr/> -->
+
+ <div class="row">
+  
+   <div class="col-sm" *ngFor="let quiz of quizes">
+  <div class="card" style="width: 18rem;" >
+    <div class="card-body">
+      <h5 class="card-title">{{quiz.name}}</h5>
+      <p class="card-text">Take {{quiz.name}} quiz</p>
+      <!-- <button class="btn btn-primary" routerLink="/question" >Go to Quiz</button> -->
+      <button class="btn btn-primary" (click)="takeQuiz(quiz)">Take Quiz</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- <table class="table table-striped">
+    <thead>
+      <tr>
+        
+        <th scope="col">Id</th>
+        <th scope="col">Text</th>
+      </tr>
+    </thead>
+    <ng-container *ngIf="quizes.length">
+       <tbody *ngFor="let quiz of quizes; let i = index">
+         <tr *ngFor="let question of quiz.questions;">
+           <td>{{question.id}}</td>
+           <td>{{question.text}}</td>
+           
+         </tr>
+       </tbody>
+     </ng-container>
+   </table> -->

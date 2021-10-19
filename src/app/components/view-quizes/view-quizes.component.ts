@@ -14,6 +14,16 @@ export class ViewQuizesComponent implements OnInit {
   showMessage : boolean = false;
   quizes: Array<Quiz> = []
   // questions: Array<any>
+  /*
+  quizes: Array<Quiz> = []
+  for quiz in quizes:
+    if quiz!= NULL:
+      res = "done"
+    else:
+      res = "recheck!"
+      
+  
+  */
 
   constructor(private quizService : QuizService, private router: Router) { }
 

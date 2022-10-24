@@ -116,6 +116,15 @@ calculate(isAnswer: boolean) {
 finalResult() {
  
 }
+  
+  
+  isActiveStack(activeStack : String ){
+       if(activeStack == "M25"){
+         setActive("M25");
+       }
+  }
+  
+  
 viewResult(){
   this.answer.forEach(i => {
     if (i == true) {
@@ -126,6 +135,8 @@ viewResult(){
   this.router.navigate(["viewResult",{count:this.count,totalQuestion:this.length}]);
 
 }
+  
+  
 
 }
 

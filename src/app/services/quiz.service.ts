@@ -35,9 +35,13 @@ export class QuizService {
   }
   
   
-  //To cbeck resilience
+  //To check resilience
   fetchActiveStack(){
-    return this.http.get(baseUrl+activeStackList);
+    return this.http.get(baseUrl+activeStack);
+  }
+  
+  fetchDRStack(){
+    return this.http.get(baseUrl+drStack);
   }
 
 }

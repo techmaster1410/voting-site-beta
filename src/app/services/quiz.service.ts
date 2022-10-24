@@ -43,5 +43,9 @@ export class QuizService {
   fetchDRStack(){
     return this.http.get(baseUrl+drStack);
   }
+  
+  fetchActiveEnv(){
+    return this.http.get(this.http.get(baseUrl+drStack+"Env);
+  }
 
 }

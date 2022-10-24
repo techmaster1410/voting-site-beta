@@ -33,5 +33,11 @@ export class QuizService {
   fetchAllQuestions(quizName:string){
     return this.http.get(baseUrl+quizName);
   }
+  
+  
+  //To cbeck resilience
+  fetchActiveStack(){
+    return this.http.get(baseUrl+activeStackList);
+  }
 
 }
